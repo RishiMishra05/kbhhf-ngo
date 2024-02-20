@@ -581,6 +581,21 @@ section {
 .aboutus-video{
   width: 200px;
 }
+/*--------------------------------------------------------------
+# About US VIDEO
+--------------------------------------------------------------*/
+.youtube-aboutus{
+  width: 650px;
+  height: 350px;
+}
+
+  @media screen and (max-width: 915px){
+    .youtube-aboutus{
+    width: 380px;
+    height: 250px;
+  }
+}
+
 .about .container {
   position: relative;
   z-index: 10;
