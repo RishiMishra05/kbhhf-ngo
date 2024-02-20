@@ -674,6 +674,16 @@ section {
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
+
+.counts-section-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counts-section{
+  align-items: center;
+}
 .counts {
   padding-top: 80px;
 }
