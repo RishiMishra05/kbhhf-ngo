@@ -145,6 +145,10 @@ h6 {
 * Desktop Navigation 
 */
 
+.ngo-logo{
+  width: 225px;
+  height: 50px;
+}
 
 .navbar {
   padding: 0;
@@ -573,6 +577,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+.aboutus-video{
+  width: 200px;
+}
 .about .container {
   position: relative;
   z-index: 10;
