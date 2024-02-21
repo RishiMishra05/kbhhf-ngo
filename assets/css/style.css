@@ -2009,6 +2009,12 @@ section {
   background: #1b1b1b;
 }
 
+.footer-contact{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 500px;
+}
+
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
 }
@@ -2157,4 +2163,11 @@ section {
   background: #e03a3c;
   color: #fff;
   text-decoration: none;
+}
+
+
+/* inner-page-footer-address */
+
+.inner-page-footer-address{
+  width: 500px;
 }
