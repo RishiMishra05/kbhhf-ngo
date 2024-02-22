@@ -73,6 +73,16 @@ h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+  .left-div-footer{
+    display: none;
+  }
+  .right-div-footer{
+    display: none;
+  }
+
+  .mgo-logo-footer{
+    width: 10px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2012,12 +2022,12 @@ section {
 .footer-contact{
   display: grid;
   grid-template-columns: auto auto auto;
-  width: 500px;
+  width: auto;
 }
 
-#footer .footer-top .footer-contact {
+/* #footer .footer-top .footer-contact {
   margin-bottom: 30px;
-}
+} */
 
 #footer .footer-top .footer-contact h3 {
   font-size: 26px;
@@ -2030,7 +2040,7 @@ section {
 }
 
 #footer .footer-top .footer-contact p {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
@@ -2168,6 +2178,44 @@ section {
 
 /* inner-page-footer-address */
 
-.inner-page-footer-address{
+/* .inner-page-footer-address{
   width: 500px;
+} */
+
+
+.ngo-logo-footer{
+  width: 500px;
+  height: 180px;
+}
+
+.row-flex{
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+}
+
+.middle-image{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.right-div-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .left-div-footer{
+    display: none;
+  }
+  .right-div-footer{
+    display: none;
+  }
+
+  .ngo-logo-footer{
+    width: 350px;
+    height: 120px;
+  }
 }
