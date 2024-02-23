@@ -38,42 +38,42 @@
 </head>
 
 <body>
-  <script>
-    window.onload = function() {
-        var heroBackground = document.getElementById("hero");
-        var backgroundImg = ["./assets/img/helping-hand.jpg",
-            "./assets/img/childrens.jpg",
-            // "./assets/img/volunteer.jpg",
-            // "./images/background-images/truck-image.jpeg"
-        ]
-        var phonebackgroundImg = ["./assets/img/helping-hand.jpg",
-            "./assets/img/childrens.jpg",
-            // "./images/background-images/truck-image.jpeg"
-        ]
+    <script>
+        window.onload = function() {
+            var heroBackground = document.getElementById("hero");
+            var backgroundImg = ["./assets/img/helping-hand.jpg",
+                "./assets/img/childrens.jpg",
+                // "./assets/img/volunteer.jpg",
+                // "./images/background-images/truck-image.jpeg"
+            ]
+            var phonebackgroundImg = ["./assets/img/helping-hand.jpg",
+                "./assets/img/childrens.jpg",
+                // "./images/background-images/truck-image.jpeg"
+            ]
 
-        setInterval(changeImage, 2500);
+            setInterval(changeImage, 2500);
 
-        function changeImage() {
-            var i = Math.floor((Math.random() * 2));
+            function changeImage() {
+                var i = Math.floor((Math.random() * 2));
 
-            if (x.matches) { // If media query matches
-                heroBackground.style.backgroundImage = "url('" + phonebackgroundImg[i] + "')";
-                heroBackground.style.backgroundSize = "cover";
-                heroBackground.style.backgroundRepeat = "no-repeat";
-                heroBackground.style.transition = "0.5s";
-            } else {
-                heroBackground.style.backgroundImage = "url('" + backgroundImg[i] + "')";
-                heroBackground.style.backgroundSize = "cover";
-                heroBackground.style.backgroundRepeat = "no-repeat";
-                heroBackground.style.transition = "0.5s";
+                if (x.matches) { // If media query matches
+                    heroBackground.style.backgroundImage = "url('" + phonebackgroundImg[i] + "')";
+                    heroBackground.style.backgroundSize = "cover";
+                    heroBackground.style.backgroundRepeat = "no-repeat";
+                    heroBackground.style.transition = "0.5s";
+                } else {
+                    heroBackground.style.backgroundImage = "url('" + backgroundImg[i] + "')";
+                    heroBackground.style.backgroundSize = "cover";
+                    heroBackground.style.backgroundRepeat = "no-repeat";
+                    heroBackground.style.transition = "0.5s";
+                }
             }
-        }
-        var x = window.matchMedia("(max-width: 700px)")
-        changeImage(x) // Call listener function at run time
-        x.addListener(changeImage) // Attach listener function on state changes
+            var x = window.matchMedia("(max-width: 700px)")
+            changeImage(x) // Call listener function at run time
+            x.addListener(changeImage) // Attach listener function on state changes
 
-    }
-</script>
+        }
+    </script>
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
@@ -114,7 +114,7 @@
             </nav>
             <!-- .navbar -->
 
-            <a href="#about" class="get-started-btn scrollto">Donate Now</a>
+            <a href="/donatenow.html" class="get-started-btn scrollto">Donate Now</a>
         </div>
     </header>
     <!-- End Header -->
@@ -282,13 +282,13 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
                                 <ul>
-                                  <h3>Aim:</h3>
+                                    <h3>Aim:</h3>
                                     <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
                                     <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
                                     <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
                                 </ul>
                                 <ul>
-                                  <h3>Idea:</h3>
+                                    <h3>Idea:</h3>
                                     <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
                                     <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
                                     <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
@@ -313,36 +313,36 @@
                     </div>
                     <div class="tab-pane" id="tab-2">
                         <div class="row">
-                          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                            <h3>Event Details</h3>
-                            <p class="fst-italic">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <ul>
-                              <h3>Aim:</h3>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                            </ul>
-                            <ul>
-                              <h3>Idea:</h3>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                            </ul>
-                            <p>
-                                Date:
-                            </p>
-                            <p>
-                                Time:
-                            </p>
-                            <p>
-                                Venue:
-                            </p>
-                            <p>
-                                Guest Details:
-                            </p>
-                        </div>
+                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                                <h3>Event Details</h3>
+                                <p class="fst-italic">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <ul>
+                                    <h3>Aim:</h3>
+                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                                </ul>
+                                <ul>
+                                    <h3>Idea:</h3>
+                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                                </ul>
+                                <p>
+                                    Date:
+                                </p>
+                                <p>
+                                    Time:
+                                </p>
+                                <p>
+                                    Venue:
+                                </p>
+                                <p>
+                                    Guest Details:
+                                </p>
+                            </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
                                 <img src="assets/img/tabs-3.jpg" alt="" class="img-fluid">
                             </div>
@@ -350,36 +350,36 @@
                     </div>
                     <div class="tab-pane" id="tab-3">
                         <div class="row">
-                          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                            <h3>Event Details</h3>
-                            <p class="fst-italic">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <ul>
-                              <h3>Aim:</h3>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                            </ul>
-                            <ul>
-                              <h3>Idea:</h3>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                            </ul>
-                            <p>
-                                Date:
-                            </p>
-                            <p>
-                                Time:
-                            </p>
-                            <p>
-                                Venue:
-                            </p>
-                            <p>
-                                Guest Details:
-                            </p>
-                        </div>
+                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                                <h3>Event Details</h3>
+                                <p class="fst-italic">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <ul>
+                                    <h3>Aim:</h3>
+                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                                </ul>
+                                <ul>
+                                    <h3>Idea:</h3>
+                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                                </ul>
+                                <p>
+                                    Date:
+                                </p>
+                                <p>
+                                    Time:
+                                </p>
+                                <p>
+                                    Venue:
+                                </p>
+                                <p>
+                                    Guest Details:
+                                </p>
+                            </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
                                 <img src="assets/img/tabs-4.jpg" alt="" class="img-fluid">
                             </div>
@@ -387,36 +387,36 @@
                     </div>
                     <div class="tab-pane" id="tab-4">
                         <div class="row">
-                          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                            <h3>Event Details</h3>
-                            <p class="fst-italic">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <ul>
-                              <h3>Aim:</h3>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                            </ul>
-                            <ul>
-                              <h3>Idea:</h3>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                            </ul>
-                            <p>
-                                Date:
-                            </p>
-                            <p>
-                                Time:
-                            </p>
-                            <p>
-                                Venue:
-                            </p>
-                            <p>
-                                Guest Details:
-                            </p>
-                        </div>
+                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                                <h3>Event Details</h3>
+                                <p class="fst-italic">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <ul>
+                                    <h3>Aim:</h3>
+                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                                </ul>
+                                <ul>
+                                    <h3>Idea:</h3>
+                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                                </ul>
+                                <p>
+                                    Date:
+                                </p>
+                                <p>
+                                    Time:
+                                </p>
+                                <p>
+                                    Venue:
+                                </p>
+                                <p>
+                                    Guest Details:
+                                </p>
+                            </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
                                 <img src="assets/img/tabs-4.jpg" alt="" class="img-fluid">
                             </div>
@@ -867,9 +867,9 @@
 
                     <div class="col-lg-6">
                         <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                          <div class="section-title">
-                            <h2>Become a volunteer</h2>
-                        </div>
+                            <div class="section-title">
+                                <h2>Become a volunteer</h2>
+                            </div>
                             <div class="row">
                                 <div class="col form-group">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
