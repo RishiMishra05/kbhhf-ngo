@@ -2,33 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>KarunBharat Helping Hand Foundation</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+  <title>KarunBharat Helping Hand Foundation</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <link href="assets/img/heart-logo.webp" rel="icon">
-    <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <!-- Favicons -->
+  <link href="assets/img/heart-logo.webp" rel="icon">
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- =======================================================
+  <!-- =======================================================
   * Template Name: Presento
   * Updated: Jan 29 2024 with Bootstrap v5.3.2
   * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
@@ -38,59 +40,59 @@
 </head>
 
 <body>
-    <script>
-        window.onload = function() {
-            var heroBackground = document.getElementById("hero");
-            var backgroundImg = ["./assets/img/helping-hand.jpg",
-                "./assets/img/childrens.jpg",
-                // "./assets/img/volunteer.jpg",
-                // "./images/background-images/truck-image.jpeg"
-            ]
-            var phonebackgroundImg = ["./assets/img/helping-hand.jpg",
-                "./assets/img/childrens.jpg",
-                // "./images/background-images/truck-image.jpeg"
-            ]
+  <script>
+    window.onload = function () {
+      var heroBackground = document.getElementById("hero");
+      var backgroundImg = ["./assets/img/helping-hand.jpg",
+        "./assets/img/childrens.jpg",
+        // "./assets/img/volunteer.jpg",
+        // "./images/background-images/truck-image.jpeg"
+      ]
+      var phonebackgroundImg = ["./assets/img/helping-hand.jpg",
+        "./assets/img/childrens.jpg",
+        // "./images/background-images/truck-image.jpeg"
+      ]
 
-            setInterval(changeImage, 2500);
+      setInterval(changeImage, 2500);
 
-            function changeImage() {
-                var i = Math.floor((Math.random() * 2));
+      function changeImage() {
+        var i = Math.floor((Math.random() * 2));
 
-                if (x.matches) { // If media query matches
-                    heroBackground.style.backgroundImage = "url('" + phonebackgroundImg[i] + "')";
-                    heroBackground.style.backgroundSize = "cover";
-                    heroBackground.style.backgroundRepeat = "no-repeat";
-                    heroBackground.style.transition = "0.5s";
-                } else {
-                    heroBackground.style.backgroundImage = "url('" + backgroundImg[i] + "')";
-                    heroBackground.style.backgroundSize = "cover";
-                    heroBackground.style.backgroundRepeat = "no-repeat";
-                    heroBackground.style.transition = "0.5s";
-                }
-            }
-            var x = window.matchMedia("(max-width: 700px)")
-            changeImage(x) // Call listener function at run time
-            x.addListener(changeImage) // Attach listener function on state changes
-
+        if (x.matches) { // If media query matches
+          heroBackground.style.backgroundImage = "url('" + phonebackgroundImg[i] + "')";
+          heroBackground.style.backgroundSize = "cover";
+          heroBackground.style.backgroundRepeat = "no-repeat";
+          heroBackground.style.transition = "0.5s";
+        } else {
+          heroBackground.style.backgroundImage = "url('" + backgroundImg[i] + "')";
+          heroBackground.style.backgroundSize = "cover";
+          heroBackground.style.backgroundRepeat = "no-repeat";
+          heroBackground.style.transition = "0.5s";
         }
-    </script>
+      }
+      var x = window.matchMedia("(max-width: 700px)")
+      changeImage(x) // Call listener function at run time
+      x.addListener(changeImage) // Attach listener function on state changes
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center">
-        <div class="container d-flex align-items-center">
-            <img src="./assets/img/karun-bharat.webp" class="ngo-logo" alt="KBLogo">
-            <h1 class="logo me-auto"></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+    }
+  </script>
 
-            <nav id="navbar" class="navbar order-last order-lg-0">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
-                    <li><a class="nav-link scrollto" href="#testimonials">About Founders</a></li>
-                    <!-- <li><a href="blog.html">Blog</a></li>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <img src="./assets/img/karun-bharat.webp" class="ngo-logo" alt="KBLogo">
+      <h1 class="logo me-auto"></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">About Founders</a></li>
+          <!-- <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -108,121 +110,134 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-            <!-- .navbar -->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
 
-            <a href="/donatenow.html" class="get-started-btn scrollto">Donate Now</a>
+      <a href="/donatenow.html" class="get-started-btn scrollto">Donate Now</a>
+
+
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+        <div class="col-xl-6">
+          <h1>Empathy in Action</h1>
+          <h2>Where No One Fights Alone</h2>
+          <a href="https://www.youtube.com/watch?v=HBW9opy6rJc" target="_blank" class="btn-get-started scrollto">Watch
+            Video</a>
         </div>
-    </header>
-    <!-- End Header -->
+      </div>
+    </div>
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
+  </section>
+  <!-- End Hero -->
 
-        <div class="container" data-aos="zoom-out" data-aos-delay="100">
-            <div class="row">
-                <div class="col-xl-6">
-                    <h1>Empathy in Action</h1>
-                    <h2>Where No One Fights Alone</h2>
-                    <a href="#about" class="btn-get-started scrollto">Watch Video</a>
-                </div>
-            </div>
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
 
+      </div>
     </section>
-    <!-- End Hero -->
+    <!-- End Clients Section -->
 
-    <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
 
-        <!-- ======= Clients Section ======= -->
-        <section id="clients" class="clients">
-            <div class="container" data-aos="zoom-in">
-
-                <div class="clients-slider swiper">
-                    <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-stretch">
+            <div class="content">
+              <h3>KarunBharat Helping Hand Foundation</h3>
+              <p>
+                <b>KarunBharat Helping Hand Foundation</b> is a non-profit organization committed to social welfare,
+                with a specific focus on supporting families affected by cancer.Recognizing the financial, emotional,
+                and social challenges
+                that cancer brings, we have established a platform where individuals, corporations, and organizations
+                can come together to make a positive impact. <br> Our organization is founded on principles of
+                compassion, empathy, and
+                community solidarity.
+              </p>
+              <a href="/inner-page.html" class="about-btn"><span>About us</span> <i class="bx bx-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="col-xl-7 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 icon-box aboutus-video" data-aos="fade-up" data-aos-delay="100">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/HBW9opy6rJc?si=pCBqv6TTDBM2Ea22"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 </div>
 
+              </div>
             </div>
-        </section>
-        <!-- End Clients Section -->
+          </div>
+        </div>
 
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about section-bg">
-            <div class="container" data-aos="fade-up">
+      </div>
+    </section>
+    <!-- End About Section -->
 
-                <div class="row no-gutters">
-                    <div class="content col-xl-5 d-flex align-items-stretch">
-                        <div class="content">
-                            <h3>KarunBharat Helping Hand Foundation</h3>
-                            <p>
-                                <b>KarunBharat Helping Hand Foundation</b> is a non-profit organization committed to social welfare, with a specific focus on supporting families affected by cancer.Recognizing the financial, emotional, and social challenges
-                                that cancer brings, we have established a platform where individuals, corporations, and organizations can come together to make a positive impact. <br> Our organization is founded on principles of compassion, empathy, and
-                                community solidarity.
-                            </p>
-                            <a href="/inner-page.html" class="about-btn"><span>About us</span> <i class="bx bx-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-xl-7 d-flex align-items-stretch">
-                        <div class="icon-boxes d-flex flex-column justify-content-center">
-                            <div class="row">
-                                <div class="col-md-6 icon-box aboutus-video" data-aos="fade-up" data-aos-delay="100">
-                                    <iframe class="youtube-aboutus" src="https://www.youtube.com/embed/K-Z2Ne7cueY?si=QcgSDkkoUXNtu4AK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen></iframe>
-                                </div>
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="row counts-section-row">
 
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Served Till Now</p>
             </div>
-        </section>
-        <!-- End About Section -->
+          </div>
 
-        <!-- ======= Counts Section ======= -->
-        <section id="counts" class="counts">
-            <div class="container" data-aos="fade-up">
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>No. of Members</p>
+            </div>
+          </div>
 
-                <div class="row counts-section-row">
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>No. of Events</p>
+            </div>
+          </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="count-box">
-                            <i class="bi bi-emoji-smile"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Served Till Now</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-                        <div class="count-box">
-                            <i class="bi bi-journal-richtext"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>No. of Members</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                        <div class="count-box">
-                            <i class="bi bi-headset"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>No. of Events</p>
-                        </div>
-                    </div>
-
-                    <!-- <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <!-- <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="bi bi-people"></i>
               <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
@@ -230,280 +245,317 @@
             </div>
           </div> -->
 
-                </div>
+        </div>
 
-            </div>
-        </section>
-        <!-- End Counts Section -->
+      </div>
+    </section>
+    <!-- End Counts Section -->
 
-        <!-- ======= Tabs Section ======= -->
-        <section id="tabs" class="tabs">
-            <div class="container" data-aos="fade-up">
+    <!-- ======= Tabs Section ======= -->
+    <section id="tabs" class="tabs">
+      <div class="container" data-aos="fade-up">
 
-                <div class="section-title">
-                    <h2>Events Details</h2>
-                    <p>We host singing events aimed at raising funds to support cancer patients in need.</p>
-                </div>
+        <div class="section-title">
+          <h2>Events Details</h2>
+          <p>We host singing events aimed at raising funds to support cancer patients in need.</p>
+        </div>
 
-                <ul class="nav nav-tabs row d-flex">
-                    <li class="nav-item col-3">
-                        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-                            <i class="ri-gps-line"></i>
-                            <h4 class="d-none d-lg-block">Event Name: </h4>
-                        </a>
-                    </li>
-                    <li class="nav-item col-3">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-                            <i class="ri-body-scan-line"></i>
-                            <h4 class="d-none d-lg-block">Event Name:</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item col-3">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-                            <i class="ri-sun-line"></i>
-                            <h4 class="d-none d-lg-block">Event Name:</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item col-3">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-                            <i class="ri-store-line"></i>
-                            <h4 class="d-none d-lg-block">Event Name:</h4>
-                        </a>
-                    </li>
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <i class="ri-gps-line"></i>
+              <h4 class="d-none d-lg-block">Event Name: </h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <i class="ri-body-scan-line"></i>
+              <h4 class="d-none d-lg-block">Event Name:</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <i class="ri-sun-line"></i>
+              <h4 class="d-none d-lg-block">Event Name:</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <i class="ri-store-line"></i>
+              <h4 class="d-none d-lg-block">Event Name:</h4>
+            </a>
+          </li>
 
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                <h3>Event Details</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+                <ul>
+                  <h3>Aim:</h3>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </li>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                    pariatur.</li>
                 </ul>
-
-                <div class="tab-content">
-                    <div class="tab-pane active show" id="tab-1">
-                        <div class="row">
-                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Event Details</h3>
-                                <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <ul>
-                                    <h3>Aim:</h3>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                                </ul>
-                                <ul>
-                                    <h3>Idea:</h3>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                                </ul>
-                                <p>
-                                    Date:
-                                </p>
-                                <p>
-                                    Time:
-                                </p>
-                                <p>
-                                    Venue:
-                                </p>
-                                <p>
-                                    Guest Details:
-                                </p>
-                            </div>
-                            <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                                <img src="assets/img/tabs-1.jpg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="tab-2">
-                        <div class="row">
-                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Event Details</h3>
-                                <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <ul>
-                                    <h3>Aim:</h3>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                                </ul>
-                                <ul>
-                                    <h3>Idea:</h3>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                                </ul>
-                                <p>
-                                    Date:
-                                </p>
-                                <p>
-                                    Time:
-                                </p>
-                                <p>
-                                    Venue:
-                                </p>
-                                <p>
-                                    Guest Details:
-                                </p>
-                            </div>
-                            <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/tabs-3.jpg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="tab-3">
-                        <div class="row">
-                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Event Details</h3>
-                                <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <ul>
-                                    <h3>Aim:</h3>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                                </ul>
-                                <ul>
-                                    <h3>Idea:</h3>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                                </ul>
-                                <p>
-                                    Date:
-                                </p>
-                                <p>
-                                    Time:
-                                </p>
-                                <p>
-                                    Venue:
-                                </p>
-                                <p>
-                                    Guest Details:
-                                </p>
-                            </div>
-                            <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/tabs-4.jpg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="tab-4">
-                        <div class="row">
-                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Event Details</h3>
-                                <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <ul>
-                                    <h3>Aim:</h3>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                                </ul>
-                                <ul>
-                                    <h3>Idea:</h3>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                                </ul>
-                                <p>
-                                    Date:
-                                </p>
-                                <p>
-                                    Time:
-                                </p>
-                                <p>
-                                    Venue:
-                                </p>
-                                <p>
-                                    Guest Details:
-                                </p>
-                            </div>
-                            <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/tabs-4.jpg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <ul>
+                  <h3>Idea:</h3>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </li>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                    pariatur.</li>
+                </ul>
+                <p>
+                  Date:
+                </p>
+                <p>
+                  Time:
+                </p>
+                <p>
+                  Venue:
+                </p>
+                <p>
+                  Guest Details:
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/tabs-1.jpg" alt="" class="img-fluid">
+              </div>
             </div>
-        </section>
-        <!-- End Tabs Section -->
-
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services section-bg ">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Services</h2>
-                    <p>At Karunbharat Helping Hand Foundation, we are dedicated to providing a range of vital services to those affected by cancer. Our mission is to extend a helping hand to individuals and families facing challenges during their cancer
-                        journey. Through financial aid, medical assistance, accommodation support, educational initiatives, employment assistance, community building, and engaging fundraising events, we strive to make a meaningful impact on the lives
-                        of those in need. Join us in our commitment to creating a compassionate and supportive community.</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                            <i class="bi bi-cash"></i>
-                            <h4><a href="#">Financial Assistance:</a></h4>
-                            <p>Emergency financial aid for families affected by cancer.Direct monetary assistance to the most vulnerable families for their treatment and rehabilitation. </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                            <i class="bi bi-heart"></i>
-                            <h4><a href="#">Medical Assistance:</a></h4>
-                            <p>Emergency medical assistance for critical situations.Financial support for necessary medical treatments.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-                            <i class="bi bi-house"></i>
-                            <h4><a href="#">Accomodation Support:</a></h4>
-                            <p>Arranging suitable accommodation for underprivileged patients during their treatment.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-                            <i class="bi bi-book"></i>
-                            <h4><a href="#">Educational Support</a></h4>
-                            <p>Providing monthly rations and covering children's educational expenses for cancer-affected individuals.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
-                            <i class="bi bi-briefcase"></i>
-                            <h4><a href="#">Employement Assistance</a></h4>
-                            <p>Assisting family members in finding employment if the primary breadwinner loses the battle against cancer.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
-                            <i class="bi bi-people"></i>
-                            <h4><a href="#">Community Building</a></h4>
-                            <p>Creating a community of 1000 members who contribute a minimum affordable amount towards the well-being of cancer-affected families.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
-                            <i class="bi bi-music-note"></i>
-                            <h4><a href="#">Fundraising Event</a></h4>
-                            <p>Organizing fundraising events, such as live musical shows, to promote a culture of charity.</p>
-                        </div>
-                    </div>
-                </div>
-
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                <h3>Event Details</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+                <ul>
+                  <h3>Aim:</h3>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </li>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                    pariatur.</li>
+                </ul>
+                <ul>
+                  <h3>Idea:</h3>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </li>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                    pariatur.</li>
+                </ul>
+                <p>
+                  Date:
+                </p>
+                <p>
+                  Time:
+                </p>
+                <p>
+                  Venue:
+                </p>
+                <p>
+                  Guest Details:
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/tabs-3.jpg" alt="" class="img-fluid">
+              </div>
             </div>
-        </section>
-        <!-- End Services Section -->
-        <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio">
-            <div class="container" data-aos="fade-up">
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                <h3>Event Details</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+                <ul>
+                  <h3>Aim:</h3>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </li>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                    pariatur.</li>
+                </ul>
+                <ul>
+                  <h3>Idea:</h3>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </li>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                    pariatur.</li>
+                </ul>
+                <p>
+                  Date:
+                </p>
+                <p>
+                  Time:
+                </p>
+                <p>
+                  Venue:
+                </p>
+                <p>
+                  Guest Details:
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/tabs-4.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                <h3>Event Details</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+                <ul>
+                  <h3>Aim:</h3>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </li>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                    pariatur.</li>
+                </ul>
+                <ul>
+                  <h3>Idea:</h3>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </li>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                    pariatur.</li>
+                </ul>
+                <p>
+                  Date:
+                </p>
+                <p>
+                  Time:
+                </p>
+                <p>
+                  Venue:
+                </p>
+                <p>
+                  Guest Details:
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/tabs-4.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
 
-                <div class="section-title">
-                    <h2>Gallery</h2>
-                    <p>Browse impactful moments, contributions, defining positive change, and community engagement gallery.</p>
-                </div>
+      </div>
+    </section>
+    <!-- End Tabs Section -->
 
-                <!-- <div class="row" data-aos="fade-up" data-aos-delay="100">
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg ">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>At Karunbharat Helping Hand Foundation, we are dedicated to providing a range of vital services to those
+            affected by cancer. Our mission is to extend a helping hand to individuals and families facing challenges
+            during their cancer
+            journey. Through financial aid, medical assistance, accommodation support, educational initiatives,
+            employment assistance, community building, and engaging fundraising events, we strive to make a meaningful
+            impact on the lives
+            of those in need. Join us in our commitment to creating a compassionate and supportive community.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-cash"></i>
+              <h4>Financial Assistance:</h4>
+              <p>Emergency financial aid for families affected by cancer.Direct monetary assistance to the most
+                vulnerable families for their treatment and rehabilitation. </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-heart"></i>
+              <h4>Medical Assistance:</h4>
+              <p>Emergency medical assistance for critical situations.Financial support for necessary medical
+                treatments.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-house"></i>
+              <h4>Accomodation Support:</h4>
+              <p>Arranging suitable accommodation for underprivileged patients during their treatment.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-book"></i>
+              <h4>Educational Support</h4>
+              <p>Providing monthly rations and covering children's educational expenses for cancer-affected individuals.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-briefcase"></i>
+              <h4>Employement Assistance</h4>
+              <p>Assisting family members in finding employment if the primary breadwinner loses the battle against
+                cancer.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
+              <i class="bi bi-people"></i>
+              <h4>Community Building</h4>
+              <p>Creating a community of 1000 members who contribute a minimum affordable amount towards the well-being
+                of cancer-affected families.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
+              <i class="bi bi-music-note"></i>
+              <h4>Fundraising Event</h4>
+              <p>Organizing fundraising events, such as live musical shows, to promote a culture of charity.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Services Section -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Browse impactful moments, contributions, defining positive change, and community engagement gallery.</p>
+        </div>
+
+        <!-- <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -514,482 +566,405 @@
           </div>
         </div> -->
 
-                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-7.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-9.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-10.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-11.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-12.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
+              </div>
             </div>
-        </section>
-        <!-- End Portfolio Section -->
+          </div>
 
-        <!-- ======= Testimonials Section ======= -->
-        <section id="testimonials" class="testimonials">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                    <h2>About our Founders</h2>
-                    <p>Meet the compassionate visionaries of Karunbharat Helping Hand Foundation, driven by the belief that each act of kindness creates positive ripples. Our founders, united in passion and purpose, are committed to uplifting the underprivileged
-                        and making a lasting impact. Join us in building a brighter, more compassionate world together</p>
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
 
-                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                                    <h3>Mr. Mukesh Kumar Rawat</h3>
-                                    <h4>Director</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i> In envisioning Karunbharat Helping Hand Foundation, we dream of a world where every act of kindness ignites a wave of positive change. Together, we are committed
-                                        to building a compassionate community, where each extended hand becomes a lifeline of support.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                                    <h3>Mr. Nalinikant Nandkumar Mishra </h3>
-                                    <h4>Director</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i> Rooted in our belief that everyone can make a difference, we, the founders of Karunbharat Helping Hand Foundation, unite to transform lives and uplift the underprivileged.
-                                        With a shared commitment, we aspire to be architects of lasting impact and champions of a more compassionate world
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="swiper-pagination"></div> -->
-                </div>
-
+              </div>
             </div>
-        </section>
-        <!-- End Testimonials Section -->
+          </div>
 
-        <!-- ======= Pricing Section ======= -->
-        <!-- <section id="pricing" class="pricing section-bg">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-10.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-11.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-12.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About our Founders</h2>
+          <p>Meet the compassionate visionaries of Karunbharat Helping Hand Foundation, driven by the belief that each
+            act of kindness creates positive ripples. Our founders, united in passion and purpose, are committed to
+            uplifting the underprivileged
+            and making a lasting impact. Join us in building a brighter, more compassionate world together</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/mukeshrawat.png" class="testimonial-img" alt="">
+                  <h3>Mr. Mukesh Kumar Rawat</h3>
+                  <h4>Director</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> In envisioning Karunbharat Helping Hand
+                    Foundation, we dream of a world where every act of kindness ignites a wave of positive change.
+                    Together, we are committed
+                    to building a compassionate community, where each extended hand becomes a lifeline of support.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Mr. Nalinikant Nandkumar Mishra </h3>
+                  <h4>Director</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Rooted in our belief that everyone can make a
+                    difference, we, the founders of Karunbharat Helping Hand Foundation, unite to transform lives and
+                    uplift the underprivileged.
+                    With a shared commitment, we aspire to be architects of lasting impact and champions of a more
+                    compassionate world
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+
+
+
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+          <h2>Team</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
         </div>
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="fade-up" data-aos-delay="100">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="box featured" data-aos="fade-up" data-aos-delay="200">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="fade-up" data-aos-delay="300">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
               </div>
             </div>
           </div>
 
         </div>
 
-      </div> -->
-        </section>
-        <!-- End Pricing Section -->
+      </div>
+    </section>
+    <!-- End Team Section -->
 
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
 
-
-        <!-- ======= Team Section ======= -->
-        <section id="team" class="team section-bg">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Team</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="member" data-aos="fade-up" data-aos-delay="100">
-                            <div class="member-img">
-                                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                            <div class="member-info">
-                                <h4>Walter White</h4>
-                                <span>Chief Executive Officer</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="member" data-aos="fade-up" data-aos-delay="200">
-                            <div class="member-img">
-                                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                            <div class="member-info">
-                                <h4>Sarah Jhonson</h4>
-                                <span>Product Manager</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="member" data-aos="fade-up" data-aos-delay="300">
-                            <div class="member-img">
-                                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                            <div class="member-info">
-                                <h4>William Anderson</h4>
-                                <span>CTO</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="member" data-aos="fade-up" data-aos-delay="400">
-                            <div class="member-img">
-                                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                            <div class="member-info">
-                                <h4>Amanda Jepson</h4>
-                                <span>Accountant</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- End Team Section -->
-
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Contact</h2>
-                    <p>Empowering communities through compassion and collaboration. Whether you're looking to volunteer,or share your ideas, your journey towards positive impact starts with reaching out to us. Join hands with KarunBharat as we strive to
-                        make a lasting difference in the world.</p>
-                </div>
-
-                <div class="row" data-aos="fade-up" data-aos-delay="100">
-
-                    <div class="col-lg-6">
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="info-box">
-                                    <i class="bx bx-map"></i>
-                                    <h3>Our Address</h3>
-                                    <p> Unit No. 232 Bldg No. 1 Edison Raheja Tesla <br>Industrial Plot GEN-2/1/C/Part D Block MIDC<br>Industrial Area Sanpada, TTC Industrial Area, <br>Shiravane, Juinagar, Navi Mumbai, Maharashtra <br> 400705 <br></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="info-box mt-4">
-                                    <i class="bx bx-envelope"></i>
-                                    <h3>Email Us</h3>
-                                    <p>info@karunbharat.com</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="info-box mt-4">
-                                    <i class="bx bx-phone-call"></i>
-                                    <h3>Call Us</h3>
-                                    <p>+91-98200 47987<br>+91-9136618731</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                            <div class="section-title">
-                                <h2>Become a volunteer</h2>
-                            </div>
-                            <div class="row">
-                                <div class="col form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                                </div>
-                                <div class="col form-group">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" name="remark" rows="5" placeholder="Remark" required></textarea>
-                            </div>
-                            <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="text-center"><button type="submit">Submit</button></div>
-                        </form>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- End Contact Section -->
-
-    </main>
-    <!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>Presento<span>.</span></h3>
-                        <p>
-                            A108 Adam Street <br> New York, NY 535022<br> United States <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
-                        </p>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
-                        </form>
-                    </div>
-
-                </div>
-            </div>
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Empowering communities through compassion and collaboration. Whether you're looking to volunteer,or share
+            your ideas, your journey towards positive impact starts with reaching out to us. Join hands with KarunBharat
+            as we strive to
+            make a lasting difference in the world.</p>
         </div>
 
-        <div class="container d-md-flex py-4">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="me-md-auto text-center text-md-start">
-                <div class="copyright">
-                    &copy; Copyright <strong><span>Presento</span></strong>. All Rights Reserved
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Our Address</h3>
+                  <p> Unit No. 232 Bldg No. 1 Edison Raheja Tesla <br>Industrial Plot GEN-2/1/C/Part D Block
+                    MIDC<br>Industrial Area Sanpada, TTC Industrial Area, <br>Shiravane, Juinagar, Navi Mumbai,
+                    Maharashtra <br> 400705 <br></p>
                 </div>
-                <div class="credits">
-                    <!-- All the links in the footer should remain intact. -->
-                    <!-- You can delete the links only if you purchased the pro version. -->
-                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/presento-bootstrap-corporate-template/ -->
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>info@karunbharat.com</p>
                 </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Us</h3>
+                  <a target="_blank" href="https://api.whatsapp.com/send?phone=919820047987">
+                        <p>+91-9820047987</p>
+                </a>
+                  <a target="_blank" href="https://api.whatsapp.com/send?phone=919136618731">
+                        <p>+91-9136618731</p>
+                </a>
+                </div>
+              </div>
             </div>
-            <div class="social-links text-center text-md-end pt-3 pt-md-0">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="section-title">
+                <h2>Become a volunteer</h2>
+              </div>
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="remark" rows="5" placeholder="Remark" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Submit</button></div>
+            </form>
+          </div>
+
         </div>
-    </footer>
-    <!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      </div>
+    </section>
+    <!-- End Contact Section -->
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+  </main>
+  <!-- End #main -->
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="footer-contact">
+
+
+
+            <div class="center-image">
+              <img src="./assets/img/karun-bharat.webp" class="ngo-logo-footer" alt="footer-Logo">
+            </div>
+            <!-- <h3>Presento<span>.</span></h3> -->
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>KarunBharat Helping Hand Foundation</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/presento-bootstrap-corporate-template/ -->
+          Designed by Sai Shruti Koppisetty, Tanvi Patil & Rishi Mishra</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+        <a href="https://www.facebook.com/karunbharat.helpinghand/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/karunbharat_helpinghand" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
