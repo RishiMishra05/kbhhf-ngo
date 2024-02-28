@@ -22,6 +22,8 @@
   $contact->from_name = $_POST['name'];
   $contact->from_email = $_POST['email'];
   $contact->phone = $_POST['phone'];
+  $contact->amount = $_POST['amount'];
+  $contact->address = $_POST['address'];
   $contact->remark = $_POST['remark'];
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
@@ -37,7 +39,9 @@
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['phone'], 'Phone');
-  $contact->add_message( $_POST['remark'], 'Remark', 10);
+  $contact->add_message( $_POST['amount'], 'Amount');
+  $contact->add_message( $_POST['address'], 'Address', 10);
+  $contact->add_message( $_POST['remark'], 'Remark', 5);
 
   echo $contact->send();
 ?>
